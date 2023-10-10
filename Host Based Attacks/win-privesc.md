@@ -31,7 +31,7 @@
 
 ![meterpreter access denied to read file](./images/privesc-02.png)  ￼￼
 
-- load icognito
+- load incognito
 - list_tokens -u : make note of available tokens (eg. delegation token)
 - impersonate_token <token_name>
 
