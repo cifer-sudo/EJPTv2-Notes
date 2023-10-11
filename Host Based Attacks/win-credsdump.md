@@ -3,7 +3,7 @@
 - Download url - https://github.com/PowerShellMafia/PowerSploit
 - In target machine:
 	- `powershell -ep bypass` (PowerShell execution policy bypass)
-	- `. .\PowerUp.ps1`
+	- `PowerSploit\Privesc>. .\PowerUp.ps1`
 	- `Invoke-PrivescAudit` - it will find misconfig files/leftover files like Unattend.xml
 
 	![Invoke-PrivescAudit output](./images/credsdump-01.png)
